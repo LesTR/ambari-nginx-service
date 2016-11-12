@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<metainfo>
+	<schemaVersion>2.0</schemaVersion>
+	<services>
+		<service>
+			<name>NGINX</name>
+			<displayName>Nginx</displayName>
+			<comment>NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. NGINX is known for its high performance, stability, rich feature set, simple configuration, and low resource consumption.</comment>
+			<version>1.4.6</version>
+			<components>
+				<component>
+					<name>SERVER</name>
+					<displayName>Nginx webserver</displayName>
+					<category>SLAVE</category>
+					<cardinality>0+</cardinality>
+					<commandScript>
+						<script>scripts/nginx_component.py</script>
+						<scriptType>PYTHON</scriptType>
+						<timeout>600</timeout>
+					</commandScript>
+				</component>
+			</components>
+			<osSpecifics>
+				<osSpecific>
+					<osFamily>ubuntu14</osFamily>
+					<packages>
+						<package>
+							<name>nginx</name>
+						</package>
+					</packages>
+				</osSpecific>
+			</osSpecifics>
+		</service>
+	</services>
+</metainfo>
