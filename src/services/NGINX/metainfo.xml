@@ -9,7 +9,7 @@
 			<version>1.4.6</version>
 			<components>
 				<component>
-					<name>SERVER</name>
+					<name>NGINX_SERVER</name>
 					<displayName>Nginx webserver</displayName>
 					<category>SLAVE</category>
 					<cardinality>0+</cardinality>
